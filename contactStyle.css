@@ -9,17 +9,18 @@ body {
     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
 }
 form {
-    border: 2px solid maroon;
+    border: 2px solid #003a8c;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
     background-color: #987a9c;
     font: 12pt Georgia, "Times New Roman", Times, serif;
+    border-radius: 5px;
 }
 div {
     border: 2px solid #003a8c;
     margin: 10px;
     padding-left: 5px;
-
+    border-radius: 5px;
 }
 
