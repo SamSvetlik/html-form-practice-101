@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contactStyle.css"> 
+  <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="get" enctype="multipart/form-data">
+      <h1>Hey, it's Sam.  Leave me a message after the beep.  **beep**</h1>
+    <div>
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" >
+    </div>
+
+    <div>
+      <!-- Comments -->
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" minlength="20" maxlength="500" placeholder="comments" rows="4" cols="50"></textarea>
+
+    </div>
+
+    <div>
+      How did you hear about me?
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+      </div>
+      <div>
+        <label for="resumeSubmission">Resume Submission</label>
+        <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+      </div>
+      <div>
+        <label for="linkedIn">LinkedIn</label>
+        <input type="checkbox" name="linkedIn" id="linkedIn">
+      </div>
+      <div>
+        <label for="codingAcademyRec">Coding Academy Rec</label>
+        <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
+      </div>
+    </div>
+    
+      <div>
+      Would you like to be contacted?
+        <div>
+          <label for="yes">Yes</label>
+        <input type="radio" name="contactYN" id="yes" value="yes">
+        </div>
+        <div>
+        <label for="no">No</label>
+        <input type="radio" name="contactYN" id="no" value="no">
+        </div>
+      </div>
+    <div>
+      I'll send you birthday wishes if you give me your date of birth.
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="1900-01-01">
+    </div>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+  <!-- <script src="scripts.js"></script> -->
+  <!-- Line 10 creats a results.html file on submit to capture values.
+  No need for any scripts.  scripts.js leftover from cloning repo, no idea
+  what the single script inside does. -->
+  <!-- Setting left&right margins to auto in CSS creates a responsive site
+  for desktop/mobile/tablet.  No need for an @media query. -->
+</body>
+</html>
